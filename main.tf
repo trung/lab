@@ -3,6 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "allow_all" {
+  vpc_id = "vpc-d7adefae"
   name        = "foo"
   description = "inbound traffic"
 }
