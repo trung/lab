@@ -1,6 +1,8 @@
 os:
 - linux
 sudo: true
+env:
+- VERBOSE=true
 install:
 - curl -SsLk https://downloads.gauge.org/stable | sh
 matrix:
