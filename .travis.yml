@@ -2,9 +2,10 @@ os:
 - linux
 sudo: true
 env:
-- VERBOSE=true
-- OS=linux
-- ARCH=x86_64
+  global:
+  - VERBOSE=true
+  - OS=linux
+  - ARCH=x86_64
 install:
 - curl -SsLk https://downloads.gauge.org/stable | sh
 matrix:
