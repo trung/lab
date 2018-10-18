@@ -1,14 +1,10 @@
 os:
 - linux
 sudo: true
-env:
-  global:
-  - VERBOSE=true
-  - OS=linux
-  - ARCH=x86_64
 install:
-- curl -Ss https://api.github.com/repos/getgauge/gauge/releases/latest
-- curl -SsLk https://downloads.gauge.org/stable | sh
+- echo deb https://dl.bintray.com/gauge/gauge-deb nightly main | sudo tee -a /etc/apt/sources.list
+- sudo apt-get update
+- sudo apt-get --allow-unauthenticated install gauge
 matrix:
   include:
   - name: one
