@@ -7,7 +7,7 @@ env:
   - OS=linux
   - ARCH=x86_64
 install:
-- curl -Ss https://api.github.com/repos/getgauge/gauge/releases/latest | grep "browser_download.*$OS.$ARCH.zip" | cut -d : -f2,3 | tr -d \"
+- curl -Ss https://api.github.com/repos/getgauge/gauge/releases/latest
 - curl -SsLk https://downloads.gauge.org/stable | sh
 matrix:
   include:
