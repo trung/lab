@@ -1,0 +1,6 @@
+```plantuml
+[First component]
+[Another component] as Comp2  
+component Comp3
+component [Last\ncomponent] as Comp4
+```

@@ -1,0 +1,50 @@
+
+# Project information
+site_name: Lab
+site_description: Lab
+site_author: Lab
+copyright: Lab 2019
+
+# Repository
+repo_name: lab
+repo_url: https://github.com/trung/lab
+
+nav:
+    - Overview: Overview.md
+
+theme:
+  name: 'material'
+  font:
+      text: 'Roboto'
+      code: 'Roboto Mono'
+  language: 'en'
+
+markdown_extensions:
+    - toc:
+        permalink: true
+        toc_depth: 3
+    - codehilite
+    - admonition
+    - footnotes
+    - def_list
+    - abbr
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.keys
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
+    - meta
+    - smarty
+    - plantuml_markdown:
+        server: http://www.plantuml.com/plantuml
+
+plugins:
+    - search
